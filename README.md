@@ -27,10 +27,10 @@ grcecli
 
 After that the application will ask in which path it should create the file index.ts and that's all (the application will create correctly only export folders)
 
-It will generate (E.g for path src/features/user and folders user-form, user-list, user-details):
-File: src/features/user/index.ts With all imports exports')
-After that you can import like: import { UserForm, UserList, UserDetails } from "src/features/user
-Instead of import UserForm from "src/features/user/user-form etc...
+It will generate (E.g for path src/features/user and folders user-form, user-list, user-details): <br />
+File: src/features/user/index.ts With all imports exports') <br />
+After that you can import like: import { UserForm, UserList, UserDetails } from "src/features/user <br />
+Instead of import UserForm from "src/features/user/user-form etc... <br />
 If index.ts exists it will be overwritten
 
 ## Author

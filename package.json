@@ -1,6 +1,6 @@
 {
   "name": "generate-react-components-export-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Quickly create a react components export with command line",
   "main": "cli.js",
   "dependencies": {
