@@ -33,12 +33,6 @@ After that you can import like: import { UserForm, UserList, UserDetails } from 
 Instead of import UserForm from "src/features/user/user-form etc...
 If index.ts exists it will be overwritten
 
-## Run tests
-
-```sh
-npm run test
-```
-
 ## Author
 
 👤 **Stanisław Sztrajt**
