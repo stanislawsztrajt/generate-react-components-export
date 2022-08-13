@@ -1,0 +1,27 @@
+{
+  "name": "generate-react-components-export-cli",
+  "version": "1.0.0",
+  "description": "Quickly create a react components export with command line",
+  "main": "cli.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.0.0"
+  },
+  "scripts": {
+    "dev": "node cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "grcecli": "./cli.js"
+  },
+  "author": "Stanisław Sztrajt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanislawsztrajt/generate-react-components-export-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/stanislawsztrajt/generate-react-components-export-cli/issues"
+  },
+  "homepage": "https://github.com/stanislawsztrajt/generate-react-components-export-cli#readme"
+}
