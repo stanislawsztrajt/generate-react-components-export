@@ -20,13 +20,13 @@ const createReactComponentExport = async () => {
 
   fs.readdir(path, (err, folders) => {
     if(err) console.log('Wrong path!');
-    
     folders = folders.filter(folder => folder !== 'index.ts' && folder !== 'index.js')
     const indexContent = `${folders.map(folder => {
-  return `import ${helpers.folderInNotKebabCase(folder)} from './${folder}'`
+      if (folder === 'types') return
+      return `import ${helpers.folderInNotKebabCase(folder)} from './${folder}'`
 }).join('\n')}
 
-export { ${folders.map(folder => helpers.folderInNotKebabCase(folder)).join(', ')} }
+export { ${folders.map(folder =>  helpers.folderInNotKebabCase(folder)).join(', ')} }
     `
 
     fs.writeFileSync(`${path}/index.ts`, indexContent)
